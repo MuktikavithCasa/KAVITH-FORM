@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <center><img src="logo.png" alt="Logo" id="logo"></center>
+             <!-- <center><h1>KAVITH</h1></center> -->
+            <h1>Shoes Order Form</h1>
+            <h2>Best shoes for best style</h2>
+        </div>
+        <form action="/submit-order" method="post">
+            <div class="inline-inputs">
+                <div>
+                    <label for="order-number">Order Number:</label>
+                    <input type="text" id="order-number" name="order-number" required placeholder="In sequence">
+                </div>
+                <div>
+                    <label for="full-name">Customer Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+            </div>
+            <div class="inline-inputs">
+                <div>
+                    <label for="product">Product:</label>
+                    <input type="text" id="product" name="product" required>
+                </div>
+                <div>
+                    <label for="size">Size:</label>
+                    <input type="text" id="size" name="size" required>
+                </div>
+            </div>
+            <div class="field-group">
+                <label for="style">Style:</label>
+                <input type="text" id="style" name="style" required>
+            </div>
+            <div class="field-group">
+                <label for="embroidery">Embroidery:</label>
+                <input type="text" id="embroidery" name="embroidery" required>
+            </div>
+            <div class="field-group">
+                <label for="upper">Upper:</label>
+                <input type="text" id="upper" name="upper" required>
+            </div>
+            <div class="field-group">
+                <label for="lining">Lining:</label>
+                <input type="text" id="lining" name="lining" required>
+            </div>
+            <div class="field-group">
+                <label for="cushion">Cushion:</label>
+                <input type="text" id="cushion" name="cushion" required>
+            </div>
+            <div class="field-group">
+                <label for="sole">Sole:</label>
+                <input type="text" id="sole" name="sole" required>
+            </div>
+            <div class="field-group">
+                <label for="mould">Mould:</label>
+                <input type="text" id="mould" name="mould" required>
+            </div>
+            <div class="field-group">
+                <label for="remark">Remark:</label>
+                <textarea id="remark" name="remark" rows="4"></textarea>
+            </div>
+            <div class="inline-inputs">
+                <div>
+                    <label for="order-date">Order Date:</label>
+                    <input type="date" id="order-date" name="order-date" required>
+                </div>
+                <div>
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+                </div>
+            </div>
+            <div class="field-group">
+                <label for="approved-by">Approved by:</label>
+                <input type="text" id="approved-by" name="approved-by" required>
+            </div>
+        </form>
+        <center><button onclick="window.print()" class="no-print">Print Form</button></center>
+    </div>
+
+    <div class="print-header">
+        <img src="logo.png" alt="Logo">
+        <h1>Shoes Order Form</h1>
+        <h2>Best shoes for best style</h2>
+    </div>
+</body>
+
+</html>

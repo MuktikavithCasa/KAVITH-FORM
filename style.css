@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #ffffbf;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header img {
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 1.9em;
+    color: #030303;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: #eca809;
+    margin-bottom: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000000;
+    flex: 1;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.inline-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.inline-inputs>div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.inline-inputs>div:last-child {
+    margin-right: 0;
+}
+
+.field-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.field-group label {
+    width: 100px;
+    flex: 0 0 auto;
+    text-align: right;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.field-group input,
+.field-group textarea {
+    flex: 1;
+    margin-left: 0;
+    max-width: 400px;
+    text-transform: uppercase;
+}
+
+input[type="submit"],
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+@media print {
+    body {
+        font-size: 10pt;
+        display: block;
+        justify-content: normal;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .print-header {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        background-color: #ffffbf;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .print-header h1,
+    .print-header h2 {
+        text-align: center;
+        margin: 0;
+        color: #030303;
+    }
+
+    .print-header img {
+        max-width: 150px;
+        margin-bottom: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        page-break-before: avoid;
+        page-break-after: avoid;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: white;
+    }
+
+    .inline-inputs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .inline-inputs>div {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .inline-inputs>div:last-child {
+        margin-right: 0;
+    }
+
+    form {
+        margin: 0;
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 10pt;
+        padding: 5px;
+        margin-top: 2px;
+    }
+
+    .field-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .field-group label {
+        width: 100px;
+        flex: 0 0 auto;
+        text-align: right;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+
+    .field-group input,
+    .field-group textarea {
+        flex: 1;
+        margin-left: 0;
+        max-width: 400px;
+        text-transform: uppercase;
+    }
+}
+
+.print-header {
+    display: none;
+}
